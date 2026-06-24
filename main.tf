@@ -35,6 +35,6 @@ resource "aws_instance" "ec2" {
   vpc_security_group_ids = [aws_security_group.sg.id]
 
   tags = {
-    Name = "tf-github-ec2"
+    Name = "tf-github-zurilabs-ec2"
   }
 }
