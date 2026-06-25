@@ -1,13 +1,17 @@
-variable "aws_region" {
-  default = "ap-southeast-1"
-}
-
 variable "project_name" {
   default = "svs"
 }
 
+variable "aws_region" {
+  description = "AWS Region"
+  type        = string
+  default     = "ap-southeast-1"
+}
+
 variable "instance_type" {
-  default = "t3.xlarge"
+  description = "EC2 Instance Type"
+  type        = string
+  default     = "t3.large"
 }
 
 variable "key_name" {
