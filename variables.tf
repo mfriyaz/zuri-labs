@@ -1,12 +1,15 @@
-variable "region" {
+variable "aws_region" {
   default = "ap-southeast-1"
 }
 
-variable "ami_id" {
-  # Amazon Linux 2 (Singapore region example)
-  default = "ami-095bd4a11ce8746c0"
+variable "project_name" {
+  default = "svs"
 }
 
 variable "instance_type" {
-  default = "t2.micro"
+  default = "t3.xlarge"
+}
+
+variable "key_name" {
+  type = string
 }
